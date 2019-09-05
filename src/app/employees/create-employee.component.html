@@ -34,10 +34,15 @@
             </div>
         </div>
 
-        <div class="form-group">
+        <!-- <div class="form-group">
                 <label for="dateOfBirth">Date of Birth</label>
-                    <input id="dateOfBirth" [owlDateTimeTrigger]="dt3" [owlDateTime]="dt3" type="text" [(ngModel)]="dateOfBirth" name="dateOfBirth">
-                    <owl-date-time [pickerType]="'calendar'" #dt3></owl-date-time>
+                <input id="dateOfBirth" [owlDateTimeTrigger]="dt3" [owlDateTime]="dt3" type="text" [(ngModel)]="dateOfBirth" name="dateOfBirth">
+                <owl-date-time [pickerType]="'calendar'" #dt3></owl-date-time>
+        </div> -->
+
+        <div class="form-group">
+            <label for="dateOfBirth">Date of Birth</label>
+            <input id="dateOfBirth" type="text" [bsConfig]="datePickerConfig" [(ngModel)]="dateOfBirth" name="dateOfBirth" bsDatepicker>
         </div>
 
         <div class="form-group">

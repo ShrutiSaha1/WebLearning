@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+
 
 
 //import { AppRoutingModule } from './app-routing.module';
@@ -30,6 +32,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     OwlDateTimeModule, 
     OwlNativeDateTimeModule,
+    BsDatepickerModule.forRoot(),
     BrowserAnimationsModule
   ],
   providers: [],
